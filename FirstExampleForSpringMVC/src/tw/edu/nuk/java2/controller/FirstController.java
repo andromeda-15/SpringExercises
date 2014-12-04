@@ -26,4 +26,10 @@ public class FirstController {
 		return "WelcomeView";
 	}
 	
+	@RequestMapping("/news")
+	public String doRedirect() {
+		
+		return "redirect:http://www.yahoo.com.tw";
+	}
+	
 }
