@@ -27,9 +27,9 @@ public class FirstController {
 	}
 	
 	@RequestMapping("/news")
-	public String doRedirect() {
+	public String doRedirect(@RequestParam(value="url", defaultValue="http://www.yahoo.com.tw") String url) {
 		
-		return "redirect:http://www.yahoo.com.tw";
+		return "redirect:"+url;
 	}
 	
 }
