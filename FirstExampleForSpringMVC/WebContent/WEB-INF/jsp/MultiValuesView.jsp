@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-       你好 ${member}
+       你好 ${member} <br>
+   URI: ${uri} <br>
+   URL: ${url}
 </body>
 </html>
