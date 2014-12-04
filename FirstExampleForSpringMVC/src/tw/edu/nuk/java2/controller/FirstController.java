@@ -1,5 +1,7 @@
 package tw.edu.nuk.java2.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,9 +35,12 @@ public class FirstController {
 	}
 	
 	@RequestMapping(value={"/Hi/{member}","/Aloha/{member}"})
-	public String doMultiURL(@PathVariable("member") String MemberName, Model model) {
+	public String doMultiURL(@PathVariable("member") String MemberName, Model model, HttpServletRequest request) {
 		
 		model.addAttribute("member", MemberName);
+		model.addAttribute("uri", request.getRequestURI());
+		model.addAttribute("url", request.getRequestURL());
+		
 		return "MultiValuesView";
 	}
 	
