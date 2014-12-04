@@ -5,7 +5,8 @@
 <head>
 <style>
 body {
-color: green
+color: black;
+background-color: #b0c4de;
 }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
