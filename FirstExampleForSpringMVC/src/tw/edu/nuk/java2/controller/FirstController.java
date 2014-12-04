@@ -32,4 +32,11 @@ public class FirstController {
 		return "redirect:"+url;
 	}
 	
+	@RequestMapping(value={"/Hi/{member}","/Aloha/{member}"})
+	public String doMultiURL(@PathVariable("member") String MemberName, Model model) {
+		
+		model.addAttribute("member", MemberName);
+		return "MultiValuesView";
+	}
+	
 }
