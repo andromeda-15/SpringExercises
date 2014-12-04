@@ -1,4 +1,4 @@
-package tw.edu.nku.java2.controller;
+package tw.edu.nuk.java2.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
