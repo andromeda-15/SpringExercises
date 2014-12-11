@@ -39,9 +39,9 @@ public class SimpleServlet extends HttpServlet {
 	}
 	
 	private void doProcess(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">");
-		out.println("<meta charset=\"UTF-8\">");
 		out.println("<HTML>");
 		out.println("  <HEAD><TITLE> 搜索結果</TITLE></HEAD>");
 		out.println("  <BODY> the outcome 中文");
